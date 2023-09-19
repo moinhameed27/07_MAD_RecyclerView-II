@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_4sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/imageview"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_centerVertical="true"
+
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageview"
+        android:text="Name"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_17ssp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageview"
+        android:layout_below="@id/name"
+        android:text="email@email.com"
+        android:textSize="@dimen/_17ssp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_below="@id/imageview"
+        android:background="#C8B9B9"
+        android:layout_marginTop="@dimen/_9sdp"
+        />
+
+
+</RelativeLayout>
