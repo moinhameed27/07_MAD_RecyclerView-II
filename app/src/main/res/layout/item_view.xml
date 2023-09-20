@@ -5,12 +5,13 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/_4sdp">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="@dimen/_40sdp"
         android:layout_height="@dimen/_40sdp"
         android:id="@+id/imageview"
-        android:layout_marginRight="@dimen/_5sdp"
-        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
         android:layout_centerVertical="true"
 
         />
@@ -20,8 +21,10 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/imageview"
         android:text="Name"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:textSize="@dimen/_17ssp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginTop="@dimen/_8sdp"
         android:textColor="@color/black"
         />
     <TextView
@@ -30,18 +33,21 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/imageview"
         android:layout_below="@id/name"
+        android:textStyle="bold"
+        android:paddingVertical="@dimen/_2sdp"
         android:text="email@email.com"
-        android:textSize="@dimen/_17ssp"
-        android:layout_marginTop="@dimen/_3sdp"
-        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="#504848"
         />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_2sdp"
-        android:layout_below="@id/imageview"
-        android:background="#C8B9B9"
-        android:layout_marginTop="@dimen/_9sdp"
-        />
+
+<!--    Below code is for the under-line under the name and email-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_2sdp"-->
+<!--        android:layout_below="@id/imageview"-->
+<!--        android:background="#C8B9B9"-->
+<!--        android:layout_marginTop="@dimen/_9sdp"-->
+<!--        />-->
 
 
 </RelativeLayout>
